@@ -423,7 +423,7 @@ def get_chunks(seq, tags):
             if tok_class == 'E':
                 if chunk_type is not None:
                     if chunk_type == tok_chunk_type:
-                        chunk = (chunk_type, chunk_start, i)
+                        chunk = (chunk_type, chunk_start, i+1)
                         chunks.append(chunk)
                         chunk_type, chunk_start = None, None
                     else:
