@@ -478,5 +478,5 @@ def get_chunks(seq, tags):
                         chunk_type, chunk_start = None, None
                 else:
                     pass
-        return chunks
+    return chunks
 
